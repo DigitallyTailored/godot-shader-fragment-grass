@@ -1,0 +1,37 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+[application]
+
+config/name="terrain-traced"
+run/main_scene="res://Spatial.tscn"
+config/icon="res://icon.png"
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+quality/driver/driver_name="GLES2"
+quality/intended_usage/framebuffer_allocation.mobile=2
+vram_compression/import_etc=true
+vram_compression/import_etc2=false
+quality/shadows/filter_mode=2
+quality/shadows/filter_mode.mobile=2
+quality/reflections/texture_array_reflections.mobile=true
+quality/reflections/high_quality_ggx.mobile=true
+quality/shading/force_vertex_shading.mobile=false
+quality/shading/force_lambert_over_burley.mobile=false
+quality/shading/force_blinn_over_ggx.mobile=false
+quality/skinning/software_skinning_fallback=false
+quality/lightmapping/use_bicubic_sampling.mobile=true
+quality/depth/hdr.mobile=true
+environment/default_environment="res://default_env.tres"

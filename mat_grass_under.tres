@@ -1,0 +1,13 @@
+[gd_resource type="SpatialMaterial" load_steps=2 format=2]
+
+[ext_resource path="res://image/grass_floor.jpg" type="Texture" id=1]
+
+[resource]
+params_grow = true
+params_grow_amount = -0.003
+albedo_color = Color( 0.65098, 0.976471, 0.584314, 1 )
+albedo_texture = ExtResource( 1 )
+metallic = 0.22
+metallic_specular = 0.0
+roughness = 0.7
+uv1_scale = Vector3( 20, 20, 20 )
